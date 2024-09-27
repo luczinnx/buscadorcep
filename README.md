@@ -11,21 +11,6 @@ Interface amigável e fácil de usar.
 - Vite: Ferramenta de build rápida para projetos web.
 - CSS: Estilização customizada para a interface.
 
-
-## 📦Estrutura de Pastas
-- 📦 buscadorcep
-├── 📂 src
-│   ├── 📂 components
-│   │   └── Resultado.jsx
-│   ├── 📂 services
-│   │   └── api.js
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── 📂 public
-├── package.json
-└── vite.config.js
-
 ## 📌 Requisitos
 - Node.js >= 14.0
 - NPM >= 6.0

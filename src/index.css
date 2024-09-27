@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #00020e, #000836);
+  animation: fundo 2.5s alternate infinite; 
+  color: white;
+  background-size: 500% 500%;
+  transition: .5s;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  animation: bodyAnima 3.5s;
+}
+
+.titulo {
+  font-size: 4.5em;
+  margin-bottom: .3em;
+}
+
+@keyframes bodyAnima {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fundo {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 0% 25%;
+  }
+
+  100% {
+    background-position: 100%;
+  }
+}
+
+.input {
+  background-color: #09003b;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .34;
+  transition: 1s;
+}
+
+.input:hover {
+  opacity: 1;
+  padding: 1em;
+}
+
+.input input {
+  padding: 1.5em;
+  border: none;
+  border: 1.5px solid #00008d;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  transition: 1s;
+}
+
+.input input::placeholder {
+  color: white;
+}
+
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0b004d;
+  box-shadow: 0px 0px 10px 5px #0000002d;
+  padding: 1em;
+  border-radius: 10px;
+  margin-top: 2em;
+  width: 25em;
+  text-align: center;
+  animation: bodyAnima 2.5s;
+}
+
+.principal h2 {
+  margin: 1em 0;
+}
+
+.principal span {
+  padding: .5em;
+  font-weight: bold;
+}
+
+.procurar {
+  background-color: transparent;
+  display: flex;padding: .5em;
+  border: none;
+  border-radius: 5px;
+  margin-left: .5em;
+  transition: 1s;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.procurar:hover {
+  background-color: #00008d;
+}
+
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 3em;
+  }
+
+  .principal {
+    width: 80%;
+  }
+}
